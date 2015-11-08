@@ -11,7 +11,7 @@ submetering1<-as.numeric(project1$Sub_metering_1)
 submetering2<-as.numeric(project1$Sub_metering_2)
 submetering3<-as.numeric(project1$Sub_metering_3)
 
-png('plot3.png')
+png('plot3.png', width=480, height=480)
 plot(project1$Time, submetering1, type="l", ylab="Energy Sub metering", xlab="")
 lines(project1$Time, submetering2, type="l", col="red")
 lines(project1$Time, submetering3, type="l", col="blue")
