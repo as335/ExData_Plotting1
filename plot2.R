@@ -8,6 +8,6 @@ project1$weekdays<-weekdays(as.Date(project1$Date))
 
 globalactivepower<-as.numeric(project1$Global_active_power)
 
-png('plot2.png')
+png('plot2.png', width=480, height=480)
 plot(project1$Time, globalactivepower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
